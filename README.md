@@ -18,13 +18,15 @@ Datetime in format YYYYMMDDThh:mm:ss. Representing the date/time the bike depart
 
 Example Line 1:
 Bike 102 was docked (arrived) at station 22 at 2020-03-04 13:04 and was rented out again (departed) at 2020-03-04 13:25:32:
+
 22,102,20200304T13:04:00,20200304T13:25:32
 
 Example Line 2:
 Bike 34 was already at station 4 at the start of the reporting period, and was first rented out at 2020-03-01 05:15:08
+
 4,34,,20200301T05:15:08
 
-##Task
+## Task
 Please write a program that will read the CSV report from the current working directory, and print the average (mean) journey duration, across all bikes and all stations, for the reporting period, in format hh:mm:ss.
 
 This project runs with Laravel version 8.65.
