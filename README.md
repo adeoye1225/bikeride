@@ -33,7 +33,7 @@ Please write a program that will read the CSV report from the current working di
 
 This project runs with Laravel version 8.65.
 
-Assuming you've already installed on your machine: PHP (>= 7.4.0), [Laravel](https://laravel.com) and [Composer](https://getcomposer.org).
+Assuming you've already installed on your machine: PHP (>= 8.0), [Laravel](https://laravel.com) and [Composer](https://getcomposer.org).
 
 ``` bash
 # install dependencies
