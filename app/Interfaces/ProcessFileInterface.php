@@ -4,6 +4,6 @@ namespace App\Interfaces;
 
 interface ProcessFileInterface {
 
-    public function process_report(array $data);
+    public function process_report(object $data);
     
 }

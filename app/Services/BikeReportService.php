@@ -5,6 +5,7 @@ namespace App\Services;
 
 use App\Interfaces\ReadFileInterface;
 use App\Interfaces\ProcessFileInterface;
+use Illuminate\Support\Collection;
 
 class BikeReportService
 {
@@ -33,7 +34,9 @@ class BikeReportService
             $get_data = $this->read_file->open_read_file($this->path);
             if(is_array($get_data)){
 
-                return $this->process_file->process_report($get_data);
+                $collection = $this->make_collection($get_data);
+                //dd($collection);
+                return $this->process_file->process_report($collection);
             }
             return $get_data;
         } catch (\Exception $exception) {
@@ -41,6 +44,24 @@ class BikeReportService
             
 
         }
+    }
+
+
+    private function make_collection($data) {
+
+        $collection = new Collection();
+        foreach($data as $item){
+                $collection->push((object)['station_id' => $item[0],
+                                           'bike_id'=>$item[1],
+                                           'arrived_at'=>$item[2],
+                                           'departed_at'=>$item[3],
+
+                ]);
+
+            
+        }
+        return $collection;
+
     }
 
 
