@@ -58,4 +58,4 @@ Then launch the server:
 ``` bash
 php artisan serve
 ```
-visit route "http://localhost/api/report/mean" ( for examplehttp://127.0.0.1:8000/api/report/mean) to have the mean duration displayed in the format hh:mm:ss.
+visit route "http://localhost/api/report/mean" ( for example http://127.0.0.1:8000/api/report/mean) to have the mean duration displayed in the format hh:mm:ss.
