@@ -29,11 +29,11 @@ Bike 34 was already at station 4 at the start of the reporting period, and was f
 ## Task
 Please write a program that will read the CSV report from the current working directory, and print the average (mean) journey duration, across all bikes and all stations, for the reporting period, in format hh:mm:ss.
 
-This project runs with Laravel version 8.65.
-
 ## Getting started
 
-Assuming you've already installed on your machine: PHP (>= 7.3.0), [Laravel](https://laravel.com) and [Composer](https://getcomposer.org).
+This project runs with Laravel version 8.65.
+
+Assuming you've already installed on your machine: PHP (>= 7.4.0), [Laravel](https://laravel.com) and [Composer](https://getcomposer.org).
 
 ``` bash
 # install dependencies
@@ -60,4 +60,4 @@ Then launch the server:
 ``` bash
 php artisan serve
 ```
-visit route "http://localhost/api/report/mean" ( for example http://127.0.0.1:8000/api/report/mean) to have the mean duration displayed in the format hh:mm:ss.
+visit route "http://localhost/api/report/mean" ( for example http://127.0.0.1:8000/api/report/mean) to have the mean duration displayed in the format hh:mm:ss (Example 22:02:48).
